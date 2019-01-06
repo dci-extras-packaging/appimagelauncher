@@ -1,5 +1,5 @@
-appimagelauncher (1.0.0~beta-3-1) unstable; urgency=medium
+appimagelauncher (1.0.0-1) unstable; urgency=medium
 
-  * Initial release (Closes: #nnnn)
+  * Initial release (Closes: #918523)
 
  -- Scarlett Moore <sgclark@kde.org>  Sat, 05 Jan 2019 16:14:31 +0000
