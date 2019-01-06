@@ -1,3 +1,2 @@
 disable_git_versioning.patch
 ifdef_optional_update_include.patch
-disable_what_looks_to_be_embedded_libs_install.patch
