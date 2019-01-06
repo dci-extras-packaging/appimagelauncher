@@ -1,0 +1,25 @@
+Index: AppImageLauncher-1.0.0-beta-3/cmake/install.cmake
+===================================================================
+--- AppImageLauncher-1.0.0-beta-3.orig/cmake/install.cmake	2019-01-06 00:13:23.000000000 +0000
++++ AppImageLauncher-1.0.0-beta-3/cmake/install.cmake	2019-01-06 13:59:57.759688284 +0000
+@@ -1,13 +1,13 @@
+ # install libappimage.so into lib/appimagekit to avoid overwriting a libappimage potentially installed into /usr/lib
+ # or /usr/lib/x86_64-... or wherever the OS puts its libraries
+ # for some reason, using TARGETS ... doesn't work here, therefore using the absolute file path
+-install(
+-    FILES
+-    ${PROJECT_BINARY_DIR}/lib/libappimage/src/libappimage/libappimage.so
+-    ${PROJECT_BINARY_DIR}/lib/AppImageUpdate/src/libappimageupdate.so
+-    ${PROJECT_BINARY_DIR}/lib/AppImageUpdate/src/qt-ui/libappimageupdate-qt.so
+-    DESTINATION ${CMAKE_INSTALL_LIBDIR}/appimagelauncher COMPONENT APPIMAGELAUNCHER
+-)
++#install(
++#    FILES
++#    ${PROJECT_BINARY_DIR}/lib/libappimage/src/libappimage/libappimage.so
++#    ${PROJECT_BINARY_DIR}/lib/AppImageUpdate/src/libappimageupdate.so
++#    ${PROJECT_BINARY_DIR}/lib/AppImageUpdate/src/qt-ui/libappimageupdate-qt.so
++#    DESTINATION ${CMAKE_INSTALL_LIBDIR}/appimagelauncher COMPONENT APPIMAGELAUNCHER
++#)
+ 
+ # TODO: find alternative to the following "workaround" (a pretty dirty hack, actually...)
+ # bundle update-binfmts as a fallback for distros which don't have it installed
