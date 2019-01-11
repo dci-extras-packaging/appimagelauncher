@@ -1,0 +1,4 @@
+#!/bin/bash
+set -e
+/usr/lib/$(DEB_HOST_MULTIARCH)/appimagelauncher/maintainer-scripts/post-install
+#DEBHELPER#
