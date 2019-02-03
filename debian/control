@@ -2,17 +2,17 @@ Source: appimagelauncher
 Section: utils
 Priority: optional
 Maintainer: Scarlett Moore <sgmoore@kde.org>
-Build-Depends: debhelper (>= 12),
-                          cmake,
-                          libappimage-dev,
-                          libboost1.67-dev,
-                          libboost-filesystem1.67-dev,
-                          libcairo2-dev,
-                          libfuse-dev,
-                          libglib2.0-dev,
-                          pkg-config,
-                          qtbase5-dev,
-                          qttools5-dev-tools
+Build-Depends: cmake,
+               debhelper (>= 12),
+               libappimage-dev,
+               libboost-filesystem1.67-dev,
+               libboost1.67-dev,
+               libcairo2-dev,
+               libfuse-dev,
+               libglib2.0-dev,
+               pkg-config,
+               qtbase5-dev,
+               qttools5-dev-tools,
 Standards-Version: 4.3.0
 Homepage: https://github.com/TheAssassin/AppImageLauncher
 Vcs-Browser: https://salsa.debian.org/sgclark-guest/appimagelauncher
@@ -21,7 +21,7 @@ Vcs-Git: https://salsa.debian.org/sgclark-guest/appimagelauncher
 Package: appimagelauncher
 Architecture: any
 Pre-Depends: binfmt-support
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: AppImage helper
  Helper application for Linux distributions serving as a
  kind of "entry point" for running and integrating AppImages
