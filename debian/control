@@ -1,7 +1,7 @@
 Source: appimagelauncher
 Section: utils
 Priority: optional
-Maintainer: Scarlett Moore <sgclark@kde.org>
+Maintainer: Scarlett Moore <sgmoore@kde.org>
 Build-Depends: debhelper (>= 11),
                           cmake,
                           libappimage-dev,
