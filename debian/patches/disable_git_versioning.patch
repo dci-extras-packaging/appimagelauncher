@@ -1,5 +1,5 @@
 Description: Disable git versioning.
- This disables a a git function that sets version as we are working
+ This disables a git function that sets version as we are working
  with tarball releases and will not have a git repo.
 Author: Scarlett Moore <sgmoore@kde.org>
 Forwarded:  not-needed
