@@ -2,7 +2,7 @@ Source: appimagelauncher
 Section: utils
 Priority: optional
 Maintainer: Scarlett Moore <sgmoore@kde.org>
-Build-Depends: debhelper (>= 11),
+Build-Depends: debhelper (>= 12),
                           cmake,
                           libappimage-dev,
                           libboost1.67-dev,
