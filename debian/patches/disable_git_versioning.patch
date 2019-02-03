@@ -1,3 +1,11 @@
+Description: Disable git versioning.
+ This disables a a git function that sets version as we are working
+ with tarball releases and will not have a git repo.
+Author: Scarlett Moore <sgmoore@kde.org>
+Forwarded:  not-needed
+Last-Update: 2019-02-03
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
 Index: AppImageLauncher-1.0.0-beta-2/CMakeLists.txt
 ===================================================================
 --- AppImageLauncher-1.0.0-beta-2.orig/CMakeLists.txt	2019-01-05 20:34:55.372505103 +0000

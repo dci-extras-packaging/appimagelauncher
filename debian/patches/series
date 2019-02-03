@@ -1,3 +1,2 @@
-upstream_install_maintainer_scripts.patch
 disable_git_versioning.patch
 ifdef_optional_update_include.patch
