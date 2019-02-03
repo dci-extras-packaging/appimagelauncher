@@ -1,6 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: appimagelauncher
 Source: https://github.com/TheAssassin/AppImageLauncher
+Files-Excluded: lib/libappimage lib/AppImageUpdate
 
 Files: *
 Copyright: 2018-2019 TheAssassin <theassassin@assassinate-you.net>
