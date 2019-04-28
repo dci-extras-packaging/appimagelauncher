@@ -11,7 +11,7 @@ diff --git a/CMakeLists.txt b/CMakeLists.txt
 index 4b8aeec..7038665 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.2)
+@@ -3,6 +3,6 @@ cmake_minimum_required(VERSION 3.2)
  project(AppImageLauncher)
 
  # versioning
