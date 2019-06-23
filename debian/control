@@ -20,7 +20,7 @@ Vcs-Git: https://salsa.debian.org/sgclark-guest/appimagelauncher.git
 
 Package: appimagelauncher
 Architecture: any
-Pre-Depends: binfmt-support
+Pre-Depends: binfmt-support, dpkg-dev
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: AppImage helper
  Helper application for Linux distributions serving as a
