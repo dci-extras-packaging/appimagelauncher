@@ -1,11 +1,14 @@
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -3,7 +3,7 @@
+@@ -2,8 +2,10 @@
+ 
  project(AppImageLauncher)
  
++`
  # versioning
 -include(cmake/versioning.cmake)
 +#include(cmake/versioning.cmake)
++
  
  set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${PROJECT_SOURCE_DIR}/cmake/modules)
  
