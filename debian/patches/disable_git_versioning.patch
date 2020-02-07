@@ -1,13 +1,3 @@
---- a/CMakeLists.txt
-+++ b/CMakeLists.txt
-@@ -2,6 +2,7 @@
- 
- project(AppImageLauncher)
- 
-+`
- # versioning
- include(cmake/versioning.cmake)
- 
 --- a/cmake/versioning.cmake
 +++ b/cmake/versioning.cmake
 @@ -6,64 +6,64 @@
