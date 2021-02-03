@@ -1,5 +1,30 @@
---- appimagelauncher-2.2.0.orig/cmake/versioning.cmake
-+++ appimagelauncher-2.2.0/cmake/versioning.cmake
+Description: <short summary of the patch>
+ TODO: Put a short summary on the line above and replace this paragraph
+ with a longer explanation of this change. Complete the meta-information
+ with other relevant fields (see below for details). To make it easier, the
+ information below has been extracted from the changelog. Adjust it or drop
+ it.
+ .
+ appimagelauncher (2.2.0+dfsg-1) UNRELEASED; urgency=medium
+ .
+   * New upstream release.
+Author: Scarlett Moore <sgmoore@kde.org>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: https://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: 2021-02-03
+
+--- appimagelauncher-2.2.0+dfsg.orig/cmake/versioning.cmake
++++ appimagelauncher-2.2.0+dfsg/cmake/versioning.cmake
 @@ -6,64 +6,64 @@ set(V_SUFFIX "")
  set(APPIMAGELAUNCHER_VERSION ${V_MAJOR}.${V_MINOR}.${V_PATCH}${V_SUFFIX})
  
@@ -51,11 +76,11 @@
 -message(STATUS "Git commit: ${APPIMAGELAUNCHER_GIT_COMMIT}")
 -mark_as_advanced(FORCE APPIMAGELAUNCHER_GIT_COMMIT)
 -
--# add build number based on GitHub actions build number if possible
--if("$ENV{GITHUB_RUN_NUMBER}" STREQUAL "")
+-# add build number based on Travis build number if possible
+-if("$ENV{TRAVIS_BUILD_NUMBER}" STREQUAL "")
 -    set(APPIMAGELAUNCHER_BUILD_NUMBER "<local dev build>")
 -else()
--    set(APPIMAGELAUNCHER_BUILD_NUMBER "$ENV{GITHUB_RUN_NUMBER}")
+-    set(APPIMAGELAUNCHER_BUILD_NUMBER "$ENV{TRAVIS_BUILD_NUMBER}")
 -endif()
 -
 -# get current date
@@ -106,11 +131,11 @@
 +#message(STATUS "Git commit: ${APPIMAGELAUNCHER_GIT_COMMIT}")
 +#mark_as_advanced(FORCE APPIMAGELAUNCHER_GIT_COMMIT)
 +
-+#add build number based on GitHub actions build number if possible
-+#if("$ENV{GITHUB_RUN_NUMBER}" STREQUAL "")
++#add build number based on Travis build number if possible
++#if("$ENV{TRAVIS_BUILD_NUMBER}" STREQUAL "")
 +    #set(APPIMAGELAUNCHER_BUILD_NUMBER "<local dev build>")
 +#else()
-+    #set(APPIMAGELAUNCHER_BUILD_NUMBER "$ENV{GITHUB_RUN_NUMBER}")
++    #set(APPIMAGELAUNCHER_BUILD_NUMBER "$ENV{TRAVIS_BUILD_NUMBER}")
 +#endif()
 +
 +#get current date
