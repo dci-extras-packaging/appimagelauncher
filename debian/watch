@@ -4,4 +4,4 @@ repack,compression=xz,\
 dversionmangle=s/\+(debian|dfsg|ds|deb)(\.?\d+)?$//, \
 filenamemangle=s%(?:.*?)?v?(\d[\d.]*)\.tar\.gz%@PACKAGE@-$1.tar.gz%" \
    https://github.com/TheAssassin/AppImageLauncher/tags \
-   (?:.*?/)?v2.1.4?(\d[\d.]*)\.tar\.gz
+   (?:.*?/)?v?(\d[\d.]*)\.tar\.gz
