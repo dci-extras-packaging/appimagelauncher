@@ -13,9 +13,9 @@ Build-Depends: cmake,
                pkg-config,
                qtbase5-dev,
                qttools5-dev-tools,
-               librsvg-dev,
+               librsvg2-dev,
                libarchive-dev,
-               libXpm-dev,
+               libxpm-dev,
                libcurl-dev,
 Standards-Version: 4.3.0
 Homepage: https://github.com/TheAssassin/AppImageLauncher
@@ -29,7 +29,7 @@ Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: AppImage helper
  Helper application for Linux distributions serving as a
  kind of "entry point" for running and integrating AppImages
- .
+ .librsvg-dev
  AppImage provides a way for upstream developers to provide
  “native” binaries for Linux users just the same way they could
  do for other operating systems. It allow packaging applications
