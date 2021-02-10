@@ -25,7 +25,7 @@ Vcs-Git: https://salsa.debian.org/sgclark-guest/appimagelauncher.git
 Package: appimagelauncher
 Architecture: any
 Pre-Depends: binfmt-support, dpkg-dev
-Depends: ${misc:Depends}, ${shlibs:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}, xdg-utils-cxx
 Description: AppImage helper
  Helper application for Linux distributions serving as a
  kind of "entry point" for running and integrating AppImages
